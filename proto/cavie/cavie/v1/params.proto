@@ -1,0 +1,13 @@
+syntax = "proto3";
+package cavie.cavie.v1;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "cavie/x/cavie/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "cavie/x/cavie/Params";
+  option (gogoproto.equal) = true;
+}
